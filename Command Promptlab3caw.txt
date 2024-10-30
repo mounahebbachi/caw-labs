@@ -1,0 +1,52 @@
+Microsoft Windows [Version 10.0.22631.4317]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Hebba>cd "C:\Users\Hebba\Documents\echo"
+
+C:\Users\Hebba\Documents\echo>node echo.js
+echo
+echo
+echo
+echo
+echo
+JS from server
+JS from server
+JS from server
+JS from server
+JS from server
+JS from server
+JS from server
+JS from server
+JS from server
+JS from server
+
+C:\Users\Hebba\Documents\echo>cd "C:\Users\Hebba\Desktop\exo2 lab3 caw"
+
+C:\Users\Hebba\Desktop\exo2 lab3 caw>node fileimport.js
+The mean score is: 25
+
+C:\Users\Hebba\Desktop\exo2 lab3 caw>cd "C:\Users\Hebba\Desktop\exo3 lab3 caw"
+
+C:\Users\Hebba\Desktop\exo3 lab3 caw>node readfile.js test.txt
+
+
+C:\Users\Hebba\Desktop\exo3 lab3 caw>node ReadFile.js test.txt
+
+
+C:\Users\Hebba\Desktop\exo3 lab3 caw>node readfile.js test.txt
+Hello, this is a text example.
+
+
+C:\Users\Hebba\Desktop\exo3 lab3 caw>cd "C:\Users\Hebba\Desktop\exo4 lab3 caw"
+
+C:\Users\Hebba\Desktop\exo4 lab3 caw>node exo4.js destination.txt "text to be saved to destination file..."
+The file has been saved!
+
+C:\Users\Hebba\Desktop\exo4 lab3 caw>node exo4.js destination.txt "hello i'm mouna!..."
+The file has been saved!
+
+C:\Users\Hebba\Desktop\exo4 lab3 caw>
+C:\Users\Hebba\Desktop\exo4 lab3 caw>node exo4.js destination.txt
+Usage: node exo4.js <fileName> <text>
+
+C:\Users\Hebba\Desktop\exo4 lab3 caw>
