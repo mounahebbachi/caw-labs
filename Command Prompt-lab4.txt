@@ -1,0 +1,694 @@
+Microsoft Windows [Version 10.0.22631.4317]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Hebba>cd "C:\Users\Hebba\Desktop"
+
+C:\Users\Hebba\Desktop>npm init -y
+Wrote to C:\Users\Hebba\Desktop\package.json:
+
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "main": "echo.test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+C:\Users\Hebba\Desktop>npm install --save-dev jest
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 266 packages, and audited 267 packages in 20s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ FAIL  ./echo.test.js
+  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (node_modules/@jest/core/build/TestScheduler.js:133:18)
+      at node_modules/@jest/core/build/TestScheduler.js:254:19
+      at node_modules/emittery/index.js:363:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (node_modules/emittery/index.js:361:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.589 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ FAIL  ./echo.test.js
+  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (node_modules/@jest/core/build/TestScheduler.js:133:18)
+      at node_modules/@jest/core/build/TestScheduler.js:254:19
+      at node_modules/emittery/index.js:363:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (node_modules/emittery/index.js:361:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.411 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ PASS  ./notation.test.js
+ FAIL  ./echo.test.js
+  ● Console
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+  ● exf function › should print the string n times
+
+    TypeError: exf is not a function
+
+      4 |     test('should print the string n times', () => {
+      5 |         console.log = jest.fn();  // Mock console.log
+    > 6 |         exf("echo", 3);
+        |         ^
+      7 |         expect(console.log).toHaveBeenCalledTimes(3);
+      8 |         expect(console.log).toHaveBeenCalledWith("echo");
+      9 |     });
+
+      at Object.exf (echo.test.js:6:9)
+
+  ● exf function › should not print anything when n is 0
+
+    TypeError: exf is not a function
+
+      11 |     test('should not print anything when n is 0', () => {
+      12 |         console.log = jest.fn();
+    > 13 |         exf("test", 0);
+         |         ^
+      14 |         expect(console.log).not.toHaveBeenCalled();
+      15 |     });
+      16 | });
+
+      at Object.exf (echo.test.js:13:9)
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.119 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ FAIL  ./echo.test.js
+  ● Console
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+  ● exf function › should print the string n times
+
+    TypeError: exf is not a function
+
+      4 |     test('should print the string n times', () => {
+      5 |         console.log = jest.fn();  // Mock console.log
+    > 6 |         exf("echo", 3);
+        |         ^
+      7 |         expect(console.log).toHaveBeenCalledTimes(3);
+      8 |         expect(console.log).toHaveBeenCalledWith("echo");
+      9 |     });
+
+      at Object.exf (echo.test.js:6:9)
+
+  ● exf function › should not print anything when n is 0
+
+    TypeError: exf is not a function
+
+      11 |     test('should not print anything when n is 0', () => {
+      12 |         console.log = jest.fn();
+    > 13 |         exf("test", 0);
+         |         ^
+      14 |         expect(console.log).not.toHaveBeenCalled();
+      15 |     });
+      16 | });
+
+      at Object.exf (echo.test.js:13:9)
+
+ PASS  ./notation.test.js
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        0.534 s, estimated 1 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ FAIL  ./echo.test.js
+  ● Console
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+  ● exf function › should print the string n times
+
+    TypeError: exf is not a function
+
+      4 |     test('should print the string n times', () => {
+      5 |         console.log = jest.fn();  // Mock console.log
+    > 6 |         exf("echo", 3);
+        |         ^
+      7 |         expect(console.log).toHaveBeenCalledTimes(3);
+      8 |         expect(console.log).toHaveBeenCalledWith("echo");
+      9 |     });
+
+      at Object.exf (echo.test.js:6:9)
+
+  ● exf function › should not print anything when n is 0
+
+    TypeError: exf is not a function
+
+      11 |     test('should not print anything when n is 0', () => {
+      12 |         console.log = jest.fn();
+    > 13 |         exf("test", 0);
+         |         ^
+      14 |         expect(console.log).not.toHaveBeenCalled();
+      15 |     });
+      16 | });
+
+      at Object.exf (echo.test.js:13:9)
+
+ PASS  ./arrayfunctions.test.js
+ PASS  ./notation.test.js
+
+Test Suites: 1 failed, 2 passed, 3 total
+Tests:       2 failed, 14 passed, 16 total
+Snapshots:   0 total
+Time:        0.827 s, estimated 1 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ FAIL  ./echo.test.js
+  ● Console
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+  ● exf function › should print the string n times
+
+    TypeError: exf is not a function
+
+      4 |     test('should print the string n times', () => {
+      5 |         console.log = jest.fn();  // Mock console.log
+    > 6 |         exf("echo", 3);
+        |         ^
+      7 |         expect(console.log).toHaveBeenCalledTimes(3);
+      8 |         expect(console.log).toHaveBeenCalledWith("echo");
+      9 |     });
+
+      at Object.exf (echo.test.js:6:9)
+
+  ● exf function › should not print anything when n is 0
+
+    TypeError: exf is not a function
+
+      11 |     test('should not print anything when n is 0', () => {
+      12 |         console.log = jest.fn();
+    > 13 |         exf("test", 0);
+         |         ^
+      14 |         expect(console.log).not.toHaveBeenCalled();
+      15 |     });
+      16 | });
+
+      at Object.exf (echo.test.js:13:9)
+
+ FAIL  ./arrayfunctions.test.js
+  ● concatenate function › concatenates all elements of an array into a string
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "RedGreenWhiteBlack"
+    Received: "MounaZinoRamiSami"
+
+      28 | describe('concatenate function', () => {
+      29 |     test('concatenates all elements of an array into a string', () => {
+    > 30 |         expect(concatenate(["Mouna", "Zino", "Rami", "Sami"])).toBe("RedGreenWhiteBlack");
+         |                                                                ^
+      31 |     });
+      32 |     test('returns an empty string for an empty array', () => {
+      33 |         expect(concatenate([])).toBe('');
+
+      at Object.toBe (arrayfunctions.test.js:30:64)
+
+ PASS  ./notation.test.js
+
+Test Suites: 2 failed, 1 passed, 3 total
+Tests:       3 failed, 13 passed, 16 total
+Snapshots:   0 total
+Time:        0.778 s, estimated 1 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>npm test
+
+> desktop@1.0.0 test
+> jest
+
+ FAIL  ./echo.test.js
+  ● Console
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      echo
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+    console.log
+      JS from server
+
+      at log (echo.js:3:17)
+
+  ● exf function › should print the string n times
+
+    TypeError: exf is not a function
+
+      4 |     test('should print the string n times', () => {
+      5 |         console.log = jest.fn();  // Mock console.log
+    > 6 |         exf("echo", 3);
+        |         ^
+      7 |         expect(console.log).toHaveBeenCalledTimes(3);
+      8 |         expect(console.log).toHaveBeenCalledWith("echo");
+      9 |     });
+
+      at Object.exf (echo.test.js:6:9)
+
+  ● exf function › should not print anything when n is 0
+
+    TypeError: exf is not a function
+
+      11 |     test('should not print anything when n is 0', () => {
+      12 |         console.log = jest.fn();
+    > 13 |         exf("test", 0);
+         |         ^
+      14 |         expect(console.log).not.toHaveBeenCalled();
+      15 |     });
+      16 | });
+
+      at Object.exf (echo.test.js:13:9)
+
+ PASS  ./arrayfunctions.test.js
+ PASS  ./notation.test.js
+
+Test Suites: 1 failed, 2 passed, 3 total
+Tests:       2 failed, 14 passed, 16 total
+Snapshots:   0 total
+Time:        0.801 s, estimated 1 s
+Ran all test suites.
+
+C:\Users\Hebba\Desktop>

@@ -1,0 +1,15 @@
+const { mean } = require('./notation');
+
+describe('mean function', () => {
+    test('should return the average of an array of numbers', () => {
+        expect(mean([10, 20, 30, 40, 50])).toBe(30);
+    });
+
+    test('should return 0 for an empty array', () => {
+        expect(mean([])).toBe(0);
+    });
+
+    test('should handle an array with one number', () => {
+        expect(mean([25])).toBe(25);
+    });
+});
