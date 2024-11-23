@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Exercise 2</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+  <!-- Root element -->
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    const { useState } = React;
+
+    
+    function DisplayTab({ table }) {
+      const [elements, setElements] = useState(table);
+
+      
+      const handleRemove = (index) => {
+        const newElements = elements.filter((_, i) => i !== index);
+        setElements(newElements);
+      };
+
+      return (
+        <ul>
+          {elements.map((item, index) => (
+            <li key={index} onClick={() => handleRemove(index)}>
+              Element {index + 1} is: {item}
+            </li>
+          ))}
+        </ul>
+      );
+    }
+
+    
+    function App() {
+      const tab1 = ["hello", "world", "from", "react"];
+      const tab2 = ["learn", "React", "step", "by", "step"];
+
+      return (
+        <div>
+          <h1>React Exercise 2</h1>
+          <h2>Table 1</h2>
+          <DisplayTab table={tab1} />
+          <h2>Table 2</h2>
+          <DisplayTab table={tab2} />
+        </div>
+      );
+    }
+
+    
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+</html>
